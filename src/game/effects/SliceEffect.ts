@@ -66,16 +66,11 @@ export default class SliceEffect {
 
       scene.tweens.add({
         targets: particle,
-
         x: x + Math.cos(angle) * distance,
-
         y: y + Math.sin(angle) * distance,
         alpha: 0,
-
         scale: 0,
-
         duration: 900,
-
         ease: "Quad.Out",
 
         onComplete: () => particle.destroy(),

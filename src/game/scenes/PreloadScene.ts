@@ -20,6 +20,7 @@ export default class PreloadScene extends Phaser.Scene {
     this.load.image("watermelon", "/images/fruits/watermelon.png");
     this.load.image("coconut", "/images/fruits/coconut.png");
     this.load.image("plum", "/images/fruits/plum.png");
+    this.load.image("golden_apple", "/images/fruits/golden_apple.png");
 
     // ============================
     // Fruit Halves
@@ -46,9 +47,33 @@ export default class PreloadScene extends Phaser.Scene {
     // Bomb
     // ============================
     this.load.image("bomb", "/images/bombs/bomb.png");
+
+    // ============================
+    // Heart
+    // ============================
+    this.load.image("heart", "/images/ui/heart.png");
+
+    // Slice
+    this.load.audio("slice1", "/audio/slice/slice1.mp3");
+    this.load.audio("slice2", "/audio/slice/slice2.mp3");
+    this.load.audio("slice3", "/audio/slice/slice3.mp3");
+
+    // Juice
+    this.load.audio("splat1", "/audio/splat/splat1.mp3");
+    this.load.audio("splat2", "/audio/splat/splat2.mp3");
+
+    // Bomb
+    this.load.audio("bomb", "/audio/bomb/bomb.mp3");
+    this.load.audio("ringing", "/audio/bomb/ringing.mp3");
+
+    // UI
+    this.load.audio("button", "/audio/ui/button.mp3");
+    this.load.audio("gameover", "/audio/ui/gameover.mp3");
+    this.load.audio("lifeLost", "/audio/ui/life_lost.mp3");
   }
 
   create() {
-    this.scene.start("GameScene");
+    this.scene.start("MainMenuScene");
   }
+
 }

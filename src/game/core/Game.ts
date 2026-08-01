@@ -2,6 +2,7 @@ import Phaser from "phaser";
 import GameScene from "../scenes/GameScene";
 import GameConfig from "../config/GameConfig";
 import PreloadScene from "../scenes/PreloadScene";
+import MainMenuScene from "../scenes/MainMenuScene";
 
 export default class SliceSenseGame extends Phaser.Game {
   constructor(parent: HTMLDivElement) {
@@ -21,8 +22,9 @@ export default class SliceSenseGame extends Phaser.Game {
 
       scene: [
         PreloadScene,
+        MainMenuScene,
         GameScene
-        ],
+      ]
     });
   }
 }
