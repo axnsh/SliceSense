@@ -70,7 +70,6 @@ export default class SliceEffect {
         x: x + Math.cos(angle) * distance,
 
         y: y + Math.sin(angle) * distance,
-
         alpha: 0,
 
         scale: 0,
